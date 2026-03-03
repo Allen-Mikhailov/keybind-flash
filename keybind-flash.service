@@ -1,0 +1,13 @@
+[Unit]
+Description=Splash Screen
+# After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/keybind-flash
+Environment=DISPLAY=:0
+# Environment=XAUTHORITY=/home/callisto/.Xauthority
+Restart=always
+
+[Install]
+# WantedBy=graphical-session.target
