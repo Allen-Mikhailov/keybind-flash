@@ -9,3 +9,8 @@ gdk = "0.15"
 evdev = "0.12"
 libc = "0.2"
 glib = "0.21.5"
+pulldown-cmark = "0.12"
+
+[profile.dev]
+debug = true
+split-debuginfo = "packed"
